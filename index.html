@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulario de Pedimento de Venta</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Logo">
+            <p>Interfaz de productos</p>
+        </header>
+        <form id="pedidoForm">
+            <label for="clienteSelector">Selecciona un cliente:</label>
+            <select id="clienteSelector" required>
+                <option value="Cliente 1">Cliente 1</option>
+                <option value="Cliente 2">Cliente 2</option>
+                <option value="Cliente 3">Cliente 3</option>
+              
+            </select>
+
+            <label for="fechaHoraSelector">Selecciona fecha y hora:</label>
+            <input type="date" id="fechaHoraSelector" class="date-time-picker" required>
+
+            <label for="productoSelector">Selecciona un producto:</label>
+            <select id="productoSelector" required>
+                <option value="Producto 1">Producto 1</option>
+                <option value="Producto 2">Producto 2</option>
+                <option value="Producto 3">Producto 3</option>
+                
+            </select>
+            
+            <label for="cantidadProducto">Cantidad:</label>
+            <input type="number" id="cantidadProducto" min="1" required>
+
+            <button type="button" onclick="agregarProducto()">Agregar Producto</button>
+
+            <div id="productosAgregados">
+                <!-- Aquí se mostrarán dinámicamente los productos agregados -->
+            </div>
+
+            <div id="totales">
+                <p>Subtotal: <span id="subtotal">0</span></p>
+                <p>Total: <span id="total">0</span></p>
+            </div>
+
+            <button type="button" onclick="enviarPedido()">Guardar Pedimento</button>
+        </form>
+    </div>
+
+    <script src="Funciones.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #F8F9F9 , #D0D3D4);
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border: 3px solid black;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+    
+}
+
+#productosAgregados {
+    margin-top: 10px;
+}
+
+#productosAgregados div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+#totales {
+    margin-top: 10px;
+}
+
+button {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+
